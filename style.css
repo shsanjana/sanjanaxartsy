@@ -98,3 +98,56 @@ p{
     margin-bottom: 10px;
   }
   
+  .artwork {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .artwork img {
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+  }
+  
+  .artwork button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .artwork button:hover {
+    background-color: #666;
+  }
+  
+  /* style.css */
+
+/* Resize images in the gallery to have a consistent size */
+.gallery img {
+    width: 250px; /* You can adjust this value */
+    height: 250px; /* Adjust this value to maintain a square shape or change it for another aspect ratio */
+    object-fit: cover; /* Ensures the image covers the space without distorting */
+    margin: 10px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+  }
+  
+  /* Optional: Styling for the Get Description buttons */
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

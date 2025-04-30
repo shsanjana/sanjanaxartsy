@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | Art Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="lightBox/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -26,19 +27,53 @@
 <section class="category">
   <h2>✏️ Sketching</h2>
   <div class="gallery">
-    <img src="images/sketching/21.jpeg" alt="Sketch 1">
-    <img src="images/sketching/22.jpeg" alt="Sketch 2">
-    <img src="images/sketching/23.jpeg" alt="Sketch 2">
+    <figure>
+      <a href="images/sketching/21.jpeg" data-lightbox="sketching">
+        <img src="images/sketching/21.jpeg" alt="Sketch 1">
+      </a>
+      <button onclick="generateDescription('21.jpeg')">Get Description</button>
+    </figure>
+
+    <figure>
+      <a href="images/sketching/22.jpeg" data-lightbox="sketching">
+        <img src="images/sketching/22.jpeg" alt="Sketch 2">
+      </a>
+      <button onclick="generateDescription('22.jpeg')">Get Description</button>
+    </figure>
+
+    <figure>
+      <a href="images/sketching/23.jpeg" data-lightbox="sketching">
+        <img src="images/sketching/23.jpeg" alt="Sketch 3">
+      </a>
+      <button onclick="generateDescription('23.jpeg')">Get Description</button>
+    </figure>
   </div>
 </section>
 
-<!-- 🎨 Charcoal -->
+<!-- 🎨 Mural Art -->
 <section class="category">
   <h2>🎨 Mural Art</h2>
   <div class="gallery">
-    <img src="images/grffitee/11.png" alt="Graffitee 1">
-    <img src="images/grffitee/12.jpeg" alt="Graffitee 2">
-    <img src="images/grffitee/13.jpeg" alt="Graffitee 2">
+    <figure>
+      <a href="images/grffitee/11.png" data-lightbox="grffitee">
+        <img src="images/grffitee/11.png" alt="Graffitee 1">
+      </a>
+      <button onclick="generateDescription('11.png')">Get Description</button>
+    </figure>
+
+    <figure>
+      <a href="images/grffitee/12.jpeg" data-lightbox="grffitee">
+        <img src="images/grffitee/12.jpeg" alt="Graffitee 2">
+      </a>
+      <button onclick="generateDescription('12.jpeg')">Get Description</button>
+    </figure>
+
+    <figure>
+      <a href="images/grffitee/13.jpeg" data-lightbox="grffitee">
+        <img src="images/grffitee/13.jpeg" alt="Graffitee 3">
+      </a>
+      <button onclick="generateDescription('13.jpeg')">Get Description</button>
+    </figure>
   </div>
 </section>
 
@@ -46,8 +81,19 @@
 <section class="category">
   <h2>🖌️ Watercolor</h2>
   <div class="gallery">
-    <img src="images/watercolour/31.jpeg" alt="Watercolor 1">
-    <img src="images/watercolour/32.jpeg" alt="Watercolor 2">
+    <figure>
+      <a href="images/watercolour/31.jpeg" data-lightbox="watercolour">
+        <img src="images/watercolour/31.jpeg" alt="Watercolor 1">
+      </a>
+      <button onclick="generateDescription('31.jpeg')">Get Description</button>
+    </figure>
+
+    <figure>
+      <a href="images/watercolour/32.jpeg" data-lightbox="watercolour">
+        <img src="images/watercolour/32.jpeg" alt="Watercolor 2">
+      </a>
+      <button onclick="generateDescription('32.jpeg')">Get Description</button>
+    </figure>
   </div>
 </section>
 
@@ -55,7 +101,12 @@
 <section class="category">
   <h2>🖼️ Acrylic</h2>
   <div class="gallery">
-    <img src="images/acrylic/1.jpeg" alt="Acrylic 1">
+    <figure>
+      <a href="images/acrylic/1.jpeg" data-lightbox="acrylic">
+        <img src="images/acrylic/1.jpeg" alt="Acrylic 1">
+      </a>
+      <button onclick="generateDescription('1.jpeg')">Get Description</button>
+    </figure>
   </div>
 </section>
 </main>
@@ -64,6 +115,9 @@
     <p>&copy; 2025 Sanjana Sharma. All rights reserved.</p>
 
 </footer>
+
+<script src="lightBox/lightbox.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
